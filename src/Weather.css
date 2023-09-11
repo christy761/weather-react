@@ -13,6 +13,10 @@
   top: -20px;
 }
 
+.Weather li {
+  display: inline-block;
+}
+
 .Weather .temperature {
   color: rgb(33, 33, 33);
   font-size: 64px;
