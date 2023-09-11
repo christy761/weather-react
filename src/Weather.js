@@ -31,7 +31,7 @@ export default function Weather() {
             <div className="col-3">
               <input
                 type="submit"
-                value="Search City"
+                value="Search"
                 className="form-control btn btn-success shadow-sm w-100 search-city-button"
               />
             </div>
