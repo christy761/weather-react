@@ -7,6 +7,24 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Weather />
+        <footer>
+          This project was coded by{" "}
+          <a
+            href="https://www.shecodes.io/graduates/21843-christy-ramkisoen"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Christy Ramkisoen
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/christy761/weather-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-sourced on GitHub
+          </a>
+        </footer>
       </div>
     </div>
   );
