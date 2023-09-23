@@ -8,9 +8,9 @@ export default function WeatherForecast(props) {
   }
 
   let apiKey = "6ea2dfaoeac7fte3c92600dba4113151";
-  let longitude = 40.7;
-  let latitude = 74;
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}`;
+  let longitude = props.coordinates.longitude;
+  let latitude = props.coordinates.latitude;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(handleResponse);
   return (
@@ -18,7 +18,7 @@ export default function WeatherForecast(props) {
       <div className="row">
         <div className="col">
           <div className="WeatherForecast-day">Thu</div>
-          <img src={props.data.condition.icon_url} alt="weather-icon" />
+          <img src={props.iconUrl} alt="weather-icon" />
           <div className="WeatherForecast-temperatures">
             <span className="WeatherForecast-temperature-max">19°</span>
             <span className="WeatherForecast-temperature-min">10°</span>
